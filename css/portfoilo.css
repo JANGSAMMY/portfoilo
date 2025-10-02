@@ -1,0 +1,226 @@
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+.lenis section.website-content {
+  padding: 50px 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+}
+.lenis section.website-content .inner {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.lenis section.website-content .con2 {
+  display: flex;
+  gap: 0;
+  min-height: 900px;
+}
+.lenis section.website-content .left {
+  font-family: "Pretendard";
+  width: 400px;
+  background-color: #fafafa;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lenis section.website-content .left p {
+  width: 320px;
+  height: 400px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  background-color: #ddd;
+}
+.lenis section.website-content .left p img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lenis section.website-content .left ul {
+  width: 100%;
+  list-style: none;
+}
+.lenis section.website-content .left ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: 500;
+}
+.lenis section.website-content .left ul li::after {
+  content: attr(data-value);
+  color: #666;
+  font-weight: 400;
+}
+.lenis section.website-content .right {
+  font-family: "Pretendard";
+  flex: 1;
+  padding: 60px 80px;
+  background-color: #fafafa;
+}
+.lenis section.website-content .right .section-block {
+  margin-bottom: 80px;
+}
+.lenis section.website-content .right .section-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 10px;
+}
+.lenis section.website-content .right .timeline {
+  margin-top: 10px;
+  border-bottom: 1px solid #666;
+}
+.lenis section.website-content .right .timeline .timeline-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.lenis section.website-content .right .timeline .timeline-item .timeline-date {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  min-width: 180px;
+}
+.lenis section.website-content .right .timeline .timeline-item .timeline-date .timeline-content {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+}
+
+@media (max-width: 968px) {
+  .con2 {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  .right {
+    padding: 40px 20px;
+  }
+  .timeline-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .timeline-content {
+    text-align: left;
+  }
+}
+section.new-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+section.new-slider .con {
+  flex-direction: column;
+  margin: auto;
+}
+section.new-slider .con .sidebar {
+  flex: none;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+section.new-slider .con .slider .slider-wrapper .slide {
+  flex: 0 0 60%;
+  margin: 0 auto;
+}
+
+.con1 section.intro h4 {
+  top: 20px;
+  left: 20px;
+  font-size: 12px;
+}
+.con1 section.intro h4 span {
+  margin-left: 0;
+  display: block;
+  margin-top: 5px;
+}
+.con1 section.intro h1:first-of-type {
+  top: 60px;
+  left: 20px;
+  font-size: clamp(40px, 15vw, 80px);
+}
+.con1 section.intro h1:nth-of-type(2) {
+  right: 0;
+  font-size: clamp(30px, 10vw, 60px);
+}
+.con1 section.intro h1:nth-of-type(3) {
+  bottom: 20px;
+  left: 20px;
+  font-size: clamp(30px, 12vw, 60px);
+}
+.con1 section.intro strong {
+  top: 240px;
+  left: 20px;
+  font-size: 16px;
+}
+.con1 section.intro p {
+  top: 280px;
+  left: 20px;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(2, 40px);
+  gap: 10px;
+  width: 160px;
+}
+.con1 section.intro p img {
+  width: 35px;
+  height: 35px;
+}
+.con1 section.intro h3 {
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+}
+.con1 section.intro h2 {
+  top: 45px;
+  right: 20px;
+  font-size: 14px;
+}
+.con1 section.intro ul {
+  top: 70px;
+  right: 20px;
+  font-size: 12px;
+}
+.con1 section.intro::after {
+  bottom: 20px;
+  right: 20px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.con1 section.intro h1:first-of-type {
+  font-size: 50px;
+}
+.con1 section.intro h1:nth-of-type(2) {
+  font-size: 35px;
+}
+.con1 section.intro h1:nth-of-type(3) {
+  font-size: 40px;
+}
+.con1 section.intro strong {
+  top: 200px;
+}
+.con1 section.intro p {
+  top: 240px;
+  grid-template-columns: repeat(2, 35px);
+  width: 85px;
+}

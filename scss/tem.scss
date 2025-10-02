@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../fonts/LeagueGothic-CondensedRegular.otf') format('woff2'),
+        url('../fonts/LeagueGothic-Regular.otf') format('woff'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Black.ttf') format('woff2'),
+        url('../fonts/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+$secondary: #00bbff;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'FK Screamer';
+    font-weight: lighter;
+    font-size: 64px;
+    line-height: 1;
+
+    span {
+        color: $secondary;
+    }
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero,
+.outro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+
+    h1 {
+        text-align: center;
+        font-size: 80px;
+    }
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150% !important;
+    height: 150% !important;
+
+    &.outline-layer {
+        z-index: 1;
+    }
+
+    &.fill-layer {
+        z-index: 3;
+    }
+}
+
+.cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    will-change: transform;
+    z-index: 2;
+}
+
+.card {
+    position: relative;
+    width: 10%;
+    height: 75%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5em;
+
+    @media (max-width: 900px) {
+        width: 25%;
+    }
+}
+
+.card-img,
+.card-title {
+    flex: 1;
+    overflow: hidden;
+}
+
+.card-title {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.team {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: #e3e3db;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    overflow: hidden;
+}
+
+.profile-images {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+
+.img {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    cursor: pointer;
+    will-change: width, height;
+
+    img {
+        border-radius: 0.5rem;
+    }
+}
+
+.profile-names {
+    width: 100%;
+    height: 15rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    overflow: hidden;
+}
+
+.name {
+    h1 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 15rem;
+        font-weight: 900;
+        letter-spacing: -0.2rem;
+        line-height: 1;
+        color: $secondary;
+        user-select: none;
+        transform: translateY(100%);
+
+        .letter {
+            position: relative;
+            transform: translateY(0%);
+            will-change: transform;
+        }
+    }
+
+    &.default {
+        h1 {
+            color: #e3e3db;
+            transform: translateY(-100%);
+        }
+    }
+}
+
+.lenis {
+    &.lenis-smooth {
+        [data-lenis-prevent] {
+            overscroll-behavior: contain;
+        }
+
+        iframe {
+            pointer-events: none;
+        }
+    }
+
+    &.lenis-stopped {
+        overflow: clip;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .team {
+        flex-direction: column-reverse;
+    }
+
+    .profile-images {
+        flex-wrap: wrap;
+        max-width: 90%;
+        justify-content: center;
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+        padding: 2.5px;
+    }
+
+    .profile-names {
+        height: 4rem;
+    }
+
+    .name h1 {
+        font-size: 4rem;
+        letter-spacing: 0;
+    }
+}

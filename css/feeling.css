@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("./fonts/BigShouldersDisplay.ttf") format("woff2-variations");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box6 {
+  width: 100%;
+  height: 100vh;
+}
+.box6.feeling, .box6.services {
+  padding: 4em;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box6.feeling p, .box6.services p {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fafafa;
+}
+.box6.feeling p > span, .box6.services p > span {
+  color: #00bbff;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.box6.feeling p .char,
+.box6.feeling p .word,
+.box6.feeling p .line, .box6.services p .char,
+.box6.services p .word,
+.box6.services p .line {
+  color: inherit;
+}
+.box6.feeling p > span .char,
+.box6.feeling p > span .word,
+.box6.feeling p > span .line, .box6.services p > span .char,
+.box6.services p > span .word,
+.box6.services p > span .line {
+  color: #00bbff;
+}
+.box6.footer {
+  font-family: "Pretendard";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  color: #222222;
+  padding: 60px 20px;
+  position: relative;
+  background-image: url(/images/bg6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box6.footer .end {
+  font-size: clamp(40px, 8vw, 100px);
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #222222;
+}
+.box6.footer .info {
+  position: absolute;
+  text-align: center;
+  bottom: 5%;
+}
+.box6.footer .info p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+  line-height: 2;
+  letter-spacing: 0.5px;
+}
+.box6.footer .info p:first-child {
+  margin-bottom: 10px;
+}
+.box6.marquees {
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.marquee-container {
+  position: relative;
+  width: 125%;
+  height: 250px;
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+.marquee {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 1em;
+}
+
+#marquee-1 .marquee,
+#marquee-3 .marquee {
+  left: -15%;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item.with-text {
+  flex: 1.5;
+}
+.item h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+.animate-text {
+  opacity: 0;
+  color: #fafafa;
+}
+.animate-text.split-ready {
+  opacity: 1;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  section.marquees {
+    height: 100vh;
+  }
+  .marquee-container {
+    width: 250%;
+    height: 150px;
+  }
+  #marquee-2 .marquee,
+  #marquee-4 .marquee {
+    left: -35%;
+  }
+  .item.with-text {
+    flex: 1;
+  }
+  .item h1 {
+    font-size: 60px;
+  }
+}

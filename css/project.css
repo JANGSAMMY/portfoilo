@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+.con4 {
+  background-color: #f3f3f3;
+}
+
+@font-face {
+  font-family: "LeagueGothic";
+  src: url("../fonts/LeagueGothic-CondensedRegular.otf") format("woff2"), url("../fonts/LeagueGothic-Regular.otf") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Black.ttf") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.wrapper .timpro {
+  padding: 50px 100px;
+  font-size: 80px;
+  font-weight: 700;
+}
+.wrapper .container2 {
+  width: 400vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.wrapper .container2 .subs {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  border-right: 3px solid #efefef;
+}
+.wrapper .container2 .subs.sub1 .subimg {
+  width: 80%;
+  height: 60vh;
+}
+.wrapper .container2 .subs.sub1 .subimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper .container2 .subs.sub2 .subimg {
+  width: 100%;
+  height: 50vh;
+}
+.wrapper .container2 .subs.sub2 .subimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper .container2 .subs .subtexts {
+  font-family: "Pretendard";
+  padding: 50px;
+  flex-direction: column;
+}
+.wrapper .container2 .subs .subtexts h1 {
+  font-family: "Pretendard";
+  font-size: 52px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.wrapper .container2 .subs .subtexts p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.wrapper .container2 .subs .subtexts p span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.wrapper .container2 .subs .subtexts .button-container {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.wrapper .container2 .subs .subtexts .detail {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  width: 12rem;
+  height: auto;
+  margin: 10px;
+}
+.wrapper .container2 .subs .subtexts .detail .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+.wrapper .container2 .subs .subtexts .detail .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #f3f3f3;
+}
+.wrapper .container2 .subs .subtexts .detail .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.7rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+.wrapper .container2 .subs .subtexts .detail .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+.wrapper .container2 .subs .subtexts .detail .circle .icon.document {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 1rem;
+  width: 1rem;
+  height: 1.2rem;
+  background: #fff;
+}
+.wrapper .container2 .subs .subtexts .detail .circle .icon.document::before {
+  position: absolute;
+  content: "";
+  top: -0.3rem;
+  left: -0.1rem;
+  width: 1.2rem;
+  height: 0.15rem;
+  background: #fff;
+}
+.wrapper .container2 .subs .subtexts .detail .circle .icon.document::after {
+  position: absolute;
+  content: "";
+  bottom: -0.3rem;
+  left: -0.1rem;
+  width: 1.2rem;
+  height: 0.15rem;
+  background: #fff;
+}
+.wrapper .container2 .subs .subtexts .detail .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.wrapper .container2 .subs .subtexts .detail:hover .circle {
+  width: 100%;
+}
+.wrapper .container2 .subs .subtexts .detail:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+.wrapper .container2 .subs .subtexts .detail:hover .circle .icon.document {
+  background: #fff;
+  transform: translate(0.8rem, 0);
+}
+.wrapper .container2 .subs .subtexts .detail:hover .button-text {
+  color: #fff;
+}
+.wrapper .container2 .subs .subtexts .plan {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  width: 12rem;
+  height: auto;
+  margin: 10px;
+}
+.wrapper .container2 .subs .subtexts .plan .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #00bbff;
+  border-radius: 1.625rem;
+}
+.wrapper .container2 .subs .subtexts .plan .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #f3f3f3;
+}
+.wrapper .container2 .subs .subtexts .plan .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.7rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+.wrapper .container2 .subs .subtexts .plan .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+.wrapper .container2 .subs .subtexts .plan .circle .icon.document {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 1rem;
+  width: 1rem;
+  height: 1.2rem;
+  background: #fff;
+}
+.wrapper .container2 .subs .subtexts .plan .circle .icon.document::before {
+  position: absolute;
+  content: "";
+  top: -0.3rem;
+  left: -0.1rem;
+  width: 1.2rem;
+  height: 0.15rem;
+  background: #fff;
+}
+.wrapper .container2 .subs .subtexts .plan .circle .icon.document::after {
+  position: absolute;
+  content: "";
+  bottom: -0.3rem;
+  left: -0.1rem;
+  width: 1.2rem;
+  height: 0.15rem;
+  background: #fff;
+}
+.wrapper .container2 .subs .subtexts .plan .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #00bbff;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.wrapper .container2 .subs .subtexts .plan:hover .circle {
+  width: 100%;
+}
+.wrapper .container2 .subs .subtexts .plan:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+.wrapper .container2 .subs .subtexts .plan:hover .circle .icon.document {
+  background: #fff;
+  transform: translate(0.8rem, 0);
+}
+.wrapper .container2 .subs .subtexts .plan:hover .button-text {
+  color: #fff;
+}

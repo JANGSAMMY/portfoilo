@@ -1,0 +1,10 @@
+{
+  "name": "portforilo",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "sass --watch scss/index.scss css/index.css"
+  },
+  "dependencies": {
+    "sass": "^1.92.1"
+  }
+}
